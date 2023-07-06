@@ -34,7 +34,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
-  margin: 50px 120px 0 120px;
+  margin: 44px 120px 0 120px;
 }
 
 .hero nav p {
@@ -119,6 +119,7 @@ main {
 
 .topic {
   display: flex;
+
   gap: 12px;
 }
 
@@ -127,13 +128,14 @@ main {
 }
 
 .input-email {
-  padding-top: 25px;
-}
-
-.input-email {
   display: flex;
   align-items: center;
   gap: 15px;
+  padding-top: 25px;
+}
+
+.input-email input::placeholder {
+  color: rgb(128, 128, 128, 0.35);
 }
 
 .input-email input {
@@ -142,6 +144,14 @@ main {
   padding: 0 20px;
   border: 1px solid rgb(128, 128, 128, 0.35);
   border-radius: 5px;
+}
+
+.input-email input:valid {
+  border: 2px solid green;
+}
+
+.input-email input:invalid {
+  border-color: red;
 }
 
 .input-email button {
@@ -153,10 +163,9 @@ main {
 }
 
 .social-midias {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 120px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
 }
 
@@ -165,14 +174,120 @@ main {
 }
 
 .image-mobile {
+  height: 405px;
   display: flex;
-
+  flex-direction: column;
+  justify-content: center;
   margin: 0 120px;
   border-radius: 10px;
   background-color: rgb(240, 238, 235);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./Assets/Phone\ Mockup\ \(Desktop\).png");
+}
+
+.space {
+  width: 50%;
+}
+
+.text-presentation {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-left: 90px;
+  padding-right: 90px;
 }
 
 .text-presentation h2 {
+  width: 70%;
   font-size: 30px;
   font-weight: 500;
+}
+
+.text-presentation p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(63, 63, 63);
+}
+
+.text-presentation a {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+}
+
+.edit {
+  margin: 50px 120px 30px 120px;
+  display: flex;
+}
+
+.edit img {
+  width: 50%;
+}
+
+.text-editor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.text-editor h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.text-editor p {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(63, 63, 63);
+}
+
+.text-editor a {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  gap: 10%;
+  padding: 50px 120px;
+  background-color: black;
+}
+
+footer h3 {
+  color: white;
+}
+
+footer p {
+  color: rgb(166, 164, 164);
+}
+
+footer a {
+  color: rgb(166, 164, 164);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(166, 164, 164);
+  position: relative;
+  transform: translate(3px, 1px);
+}
+
+.spence-resume {
+  width: 30%;
+}
+
+.topics {
+  display: flex;
+  gap: 25%;
+}
+
+.footer-topic {
+  display: flex;
+  flex-direction: column;
 }
